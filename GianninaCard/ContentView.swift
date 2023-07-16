@@ -10,14 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color(UIColor.systemRed)
+            Color(red: 0.95, green: 0.61, blue: 0.07, opacity: 1.00)
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
+//                Image(systemName: "globe")
+//                    .imageScale(.large)
+//                    .foregroundColor(.accentColor)
+                Text("Pachi Fuera de Carril")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .bold()
+                    .foregroundColor(.indigo)
             }
             .padding()
         }
