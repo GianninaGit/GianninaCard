@@ -14,18 +14,31 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
+                Image("pachi")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 355.0, height: 355.0)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(Color(red: 0.95, green: 0.61, blue: 0.07, opacity: 1.00), lineWidth: 32.0)
+                    )
 //                Image(systemName: "globe")
 //                    .imageScale(.large)
 //                    .foregroundColor(.accentColor)
                 Text("Pachi Fuera de Carril")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .bold()
+                    .font(Font.custom("BacasimeAntique-Regular", size: 40))
+//                    .bold()
                     .foregroundColor(.indigo)
+                Text("Automodelista")
+                    .foregroundColor(.white)
+                    .font(.system(size: 25))
+                Divider()
+                InfoView(text: "+34 654 654 654", imageName: "phone.fill")
+                InfoView(text: "email@gmail.com", imageName: "envelope.fill")
             }
-            .padding()
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -33,3 +46,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

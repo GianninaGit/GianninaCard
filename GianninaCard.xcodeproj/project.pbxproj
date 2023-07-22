@@ -11,6 +11,9 @@
 		026219002A633AD700BF84E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026218FF2A633AD700BF84E1 /* ContentView.swift */; };
 		026219022A633AD900BF84E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026219012A633AD900BF84E1 /* Assets.xcassets */; };
 		026219052A633AD900BF84E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026219042A633AD900BF84E1 /* Preview Assets.xcassets */; };
+		0262192B2A6C0B9800BF84E1 /* BacasimeAntique-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0262192D2A6C0B9800BF84E1 /* BacasimeAntique-Regular.ttf */; };
+		026219302A6C0DB000BF84E1 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0262192E2A6C0DB000BF84E1 /* Pacifico-Regular.ttf */; };
+		026219332A6C97F000BF84E1 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026219322A6C97F000BF84E1 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		026218FF2A633AD700BF84E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		026219012A633AD900BF84E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026219042A633AD900BF84E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0262192A2A6C063600BF84E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0262192C2A6C0B9800BF84E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/BacasimeAntique-Regular.ttf"; sourceTree = "<group>"; };
+		0262192E2A6C0DB000BF84E1 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pacifico-Regular.ttf"; path = "Pacifico/Pacifico-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		026219322A6C97F000BF84E1 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,11 @@
 		026218FC2A633AD700BF84E1 /* GianninaCard */ = {
 			isa = PBXGroup;
 			children = (
+				0262192A2A6C063600BF84E1 /* Info.plist */,
+				0262190B2A6BFD1E00BF84E1 /* fonts */,
 				026218FD2A633AD700BF84E1 /* GianninaCardApp.swift */,
 				026218FF2A633AD700BF84E1 /* ContentView.swift */,
+				026219322A6C97F000BF84E1 /* InfoView.swift */,
 				026219012A633AD900BF84E1 /* Assets.xcassets */,
 				026219032A633AD900BF84E1 /* Preview Content */,
 			);
@@ -65,6 +75,15 @@
 				026219042A633AD900BF84E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0262190B2A6BFD1E00BF84E1 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0262192E2A6C0DB000BF84E1 /* Pacifico-Regular.ttf */,
+				0262192D2A6C0B9800BF84E1 /* BacasimeAntique-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +146,8 @@
 			files = (
 				026219052A633AD900BF84E1 /* Preview Assets.xcassets in Resources */,
 				026219022A633AD900BF84E1 /* Assets.xcassets in Resources */,
+				0262192B2A6C0B9800BF84E1 /* BacasimeAntique-Regular.ttf in Resources */,
+				026219302A6C0DB000BF84E1 /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,11 +159,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				026219002A633AD700BF84E1 /* ContentView.swift in Sources */,
+				026219332A6C97F000BF84E1 /* InfoView.swift in Sources */,
 				026218FE2A633AD700BF84E1 /* GianninaCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0262192D2A6C0B9800BF84E1 /* BacasimeAntique-Regular.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0262192C2A6C0B9800BF84E1 /* Base */,
+			);
+			name = "BacasimeAntique-Regular.ttf";
+			path = Bacasime_Antique;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		026219062A633AD900BF84E1 /* Debug */ = {
@@ -270,6 +304,7 @@
 				DEVELOPMENT_TEAM = JSHZ936J45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GianninaCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +334,7 @@
 				DEVELOPMENT_TEAM = JSHZ936J45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GianninaCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
